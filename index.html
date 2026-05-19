@@ -9,15 +9,15 @@
         body {
             margin: 0;
             font-family: "Georgia", serif;
-            background: #2b2b2b; /* sfondo scuro elegante */
-            color: #e6e6e6;
+            background: #d9d7d2; /* sfondo alleggerito */
+            color: #333;
             text-align: center;
             position: relative;
 
             /* --- SFONDO DIAGONALE RIPETUTO CON TESTO --- */
             background-image: url("data:image/svg+xml;utf8,\
                 <svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'>\
-                    <text x='0' y='150' font-size='40' fill='rgba(255,255,255,0.05)' transform='rotate(-35 0 0)'>\
+                    <text x='0' y='150' font-size='40' fill='rgba(0,0,0,0.06)' transform='rotate(-35 0 0)'>\
                         STrani OGgEtti DElla VIta\
                     </text>\
                 </svg>");
@@ -35,18 +35,18 @@
         h1 {
             font-size: 2.8rem;
             margin-bottom: 5px;
-            color: #ffffff;
+            color: #222;
         }
 
         h2 {
             font-size: 1.2rem;
             font-weight: 300;
-            color: #cccccc;
+            color: #444;
         }
 
         /* --- EVIDENZIAZIONE MOTTO --- */
         .accent {
-            background: linear-gradient(to bottom, #000000, rgba(0,0,0,0.2));
+            background: linear-gradient(to bottom, #000000, rgba(0,0,0,0.25));
             -webkit-background-clip: text;
             color: transparent;
             font-weight: 700;
@@ -65,24 +65,24 @@
         }
 
         .item {
-            background: #3a3a3a;
+            background: #ffffff;
             border-radius: 12px;
-            border: 1px solid #555;
+            border: 1px solid #c7c7c7;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .item:hover {
             transform: translateY(-6px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
         }
 
         .item img {
             width: 100%;
             height: 220px;
             object-fit: contain;
-            background: #2b2b2b;
+            background: #e8e6e2;
             padding: 10px;
         }
 
@@ -90,20 +90,20 @@
             font-size: 1.3rem;
             font-weight: 600;
             padding: 12px 15px 0 15px;
-            color: #ffffff;
+            color: #222;
         }
 
         .item-desc {
             font-size: 0.95rem;
             padding: 5px 15px 15px 15px;
-            color: #cccccc;
+            color: #555;
         }
 
         footer {
             margin-top: 40px;
             padding: 20px;
             font-size: 0.9rem;
-            color: #bbbbbb;
+            color: #555;
             position: relative;
             z-index: 1;
         }
@@ -111,7 +111,7 @@
         .note {
             margin-top: 20px;
             font-size: 1rem;
-            color: #dddddd;
+            color: #333;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;

@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOGEDEVI – STrani OGgEtti DElla VIta</title>
 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111; /* sfondo scuro elegante */
+            color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* ⭐ TITOLO */
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        /* ⭐ GRIGLIA FOTO */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* ⭐ CARD FOTO */
+        .item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 12px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .item-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>STOGEDEVI</h1>
+    <h2>STrani OGgEtti DElla VIta</h2>
+
+    <!-- ⭐ GALLERIA FOTO -->
+    <div class="gallery">
+
+        <div class="item">
+            <img src="assets/stogedevi/oggetto1.jpg" alt="Oggetto strano">
+            <div class="item-title">Oggetto misterioso</div>
+            <div class="item-desc">Provenienza sconosciuta</div>
+        </div>
+
+        <div class="item">
+            <img src="assets/stogedevi/oggetto2.jpg" alt="Utensile antico">
+            <div class="item-title">Utensile antico</div>
+            <div class="item-desc">Probabilmente anni '40</div>
+        </div>
+
+        <div class="item">
+            <img src="assets/stogedevi/oggetto3.jpg" alt="Strumento particolare">
+            <div class="item-title">Strumento particolare</div>
+            <div class="item-desc">Funzione ignota</div>
+        </div>
+
+        <div class="item">
+            <img src="assets/stogedevi/oggetto4.jpg" alt="Oggetto vintage">
+            <div class="item-title">Oggetto vintage</div>
+            <div class="item-desc">Ritrovato in soffitta</div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 STOGEDEVI – Tutti i diritti riservati.
+    </footer>
+
+</body>
+</html>

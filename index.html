@@ -44,6 +44,14 @@
             color: #cccccc;
         }
 
+        /* --- EVIDENZIAZIONE MOTTO --- */
+        .accent {
+            background: linear-gradient(to bottom, #000000, rgba(0,0,0,0.2));
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+
         /* --- GALLERIA --- */
         .gallery {
             display: grid;
@@ -115,7 +123,13 @@
 
     <header>
         <h1>STOGEDEVI</h1>
-        <h2>STrani OGgEtti DElla VIta</h2>
+
+        <h2>
+            <span class="accent">ST</span>rani 
+            <span class="accent">OG</span>g<span class="accent">E</span>tti 
+            <span class="accent">DE</span>lla 
+            <span class="accent">VI</span>ta
+        </h2>
     </header>
 
     <div class="gallery">

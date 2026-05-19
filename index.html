@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STOGEDEVI – Strani OGgEtti DElla VIta</title>
+    <title>STOGEDEVI – Museo degli Oggetti Strani</title>
 
     <style>
         body {
             margin: 0;
             font-family: "Georgia", serif;
-            background: #f4f1e8; /* colore museo */
+            background: #f4f1e8;
             color: #333;
             text-align: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* --- SFONDO DIAGONALE CON TESTO RIPETUTO --- */
+        body::before {
+            content: "STrani OGgEtti DElla VIta  STrani OGgEtti DElla VIta  STrani OGgEtti DElla VIta  ";
+            position: fixed;
+            top: -200px;
+            left: -200px;
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgba(0,0,0,0.05);
+            transform: rotate(-35deg);
+            white-space: nowrap;
+            pointer-events: none;
+            z-index: -1;
         }
 
         header {
             padding: 40px 20px;
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
@@ -30,7 +49,7 @@
             color: #6a5f5f;
         }
 
-        /* --- GALLERIA MUSEO --- */
+        /* --- GALLERIA MUSEO MODERNO --- */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -38,6 +57,8 @@
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+            position: relative;
+            z-index: 1;
         }
 
         .item {
@@ -58,7 +79,7 @@
             width: 100%;
             height: 220px;
             object-fit: contain; /* NON TAGLIA PIÙ LE FOTO */
-            background: #f0ede6; /* sfondo neutro museo */
+            background: #f0ede6;
             padding: 10px;
         }
 
@@ -80,6 +101,8 @@
             padding: 20px;
             font-size: 0.9rem;
             color: #6a5f5f;
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
